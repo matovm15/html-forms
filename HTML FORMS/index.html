@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username"
+            required>
+        </div>
+
+        <div>
+            <label for="name">Email</label>
+            <input type="email" name="email" id="email" placeholder="username@exapmle.com"
+            required>
+        </div>
+        <div>
+           <label for="age">Age</label>
+           <input type="number" name="age" id="age" min="5" max="100" step="1">
+        </div>
+
+        <div>
+            <label for="date">Date Date</label>
+            <input type="date" id="date" name="date" min="1995-02-23">
+        </div>
+              Favorite Food
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana">
+        </div>
+        <div>
+            <label for="rice">Rice</label>
+            <input type="checkbox" name="rice" id="rice">
+        </div>
+        <div>
+            <label for="pizza">Pizaa</label>
+            <input type="checkbox" name="pizza" id="pizza">
+        </div>
+        Gender
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <label for="college">College</label>
+            <select name="colege" id="college" multiple>
+                <option value="cocis">CoCIS</option>
+                <option value="cedat" label="CEDAT"></option>
+                <option value="chs">CHS</option>
+                <option value="covab">COVAB</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio" name="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10">A brief description about yourself...
+            </textarea>
+            <input type="hidden" name="hidden" value="hi">
+
+            <div>
+                <label for="file">File</label>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">COLOR</label>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <label>Password
+            <input type="password" name="password" placeholder="password"
+            required>
+            </label>
+        </div>
+          <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+<!-- 
+    <select> and <textarea>  are the only two anomally elements in the
+     form don't usually use the input for their element
+
+-->
+</body>
+</html> 
